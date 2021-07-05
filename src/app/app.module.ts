@@ -10,10 +10,12 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
 import {MatButtonModule} from "@angular/material/button";
+import { CarrouselComponent } from './component/carrousel/carrousel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CarrouselComponent
   ],
   imports: [
     BrowserModule,
