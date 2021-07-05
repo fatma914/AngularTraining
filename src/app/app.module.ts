@@ -12,12 +12,16 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
 import {MatButtonModule} from "@angular/material/button";
+import { CarrouselComponent } from './component/carrousel/carrousel.component';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent
+    ContactComponent,
+    CarrouselComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,8 @@ import {MatButtonModule} from "@angular/material/button";
     MatIconModule,
     MatSidenavModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    IvyCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
