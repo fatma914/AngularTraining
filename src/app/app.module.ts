@@ -14,6 +14,7 @@ import {MatListModule} from "@angular/material/list";
 import {MatButtonModule} from "@angular/material/button";
 import { CarrouselComponent } from './component/carrousel/carrousel.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { ToolbarComponent } from './component/toolbar/toolbar.component';
 
 
 
@@ -21,7 +22,8 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
   declarations: [
     AppComponent,
     ContactComponent,
-    CarrouselComponent
+    CarrouselComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,

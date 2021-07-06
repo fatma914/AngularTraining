@@ -1,33 +1,7 @@
-<div class="example-container" >
-  <mat-toolbar color="primary" class="example-toolbar">
-    <button mat-mini-fab (click)="snav.toggle()" style="background-color:white; color: purple" >
-      <mat-icon>menu</mat-icon>
-    </button>
-    <h1 class="example-app-name" style="padding-left: 10px; font-size: 15px">Special component</h1>
-  </mat-toolbar>
 
-  <mat-sidenav-container class="example-sidenav-container">
-    <mat-sidenav #snav >
-      <mat-nav-list>
-        <a mat-list-item routerLink="." >Carrousel</a>
-        <a mat-list-item routerLink="." >Formulaire</a>
-        <a  mat-list-item routerLink="." >Table</a>
-        <a *ngIf="false" mat-list-item routerLink=".">test ng if</a>
+<app-toolbar></app-toolbar>
+<app-carrousel></app-carrousel>
 
-      </mat-nav-list>
-    </mat-sidenav>
-
-    <mat-sidenav-content style="background: #fff;height: 100vh">
-      <app-carrousel ></app-carrousel>
-      <app-contact></app-contact>
-      <!--<router-outlet></router-outlet>-->
-    </mat-sidenav-content>
-  </mat-sidenav-container>
-</div>
+<app-contact></app-contact>
 
 
-
-
-<!-- Copyright 2021 Google LLC. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license -->
