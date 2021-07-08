@@ -1,1 +1,40 @@
-<p style="color: black">contact works!</p>
+<section class="hero is-small is-primary" style="background-color: #00d1b2; color: #fff;">
+  <div class="hero-body" style="padding: 20px; font-size: 30px; margin: auto; display: block ">
+    <p class="title">
+      Contact Us!
+    </p>
+  </div>
+</section>
+<form  [formGroup]="simpleForm" >
+<div class="container-fluid; mx-auto d-block " style="padding-top: 30px; color: black; padding-left: 50px">
+  <mat-form-field class="name" appearance="fill">
+    <mat-label style="color: black">Name</mat-label>
+    <label>
+      <input style="color: black" formControlName="nameContact"  ngModule matInput #name maxlength="30" placeholder="Your Name">
+    </label>
+  </mat-form-field>
+
+<div class="example-container" style="color: black">
+  <mat-form-field appearance="fill">
+    <mat-label style="color: black">Enter your email</mat-label>
+    <label>
+      <input matInput placeholder="pat@example.com"   formControlName="emailContact" >
+    </label>
+    <mat-error *ngIf="simpleForm.controls['emailContact'].invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+</div>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label style="color: black">Message</mat-label>
+    <label>
+      <input style="color: black" matInput #message formControlName="messageContact" maxlength="256" placeholder="Ex. I need help with...">
+    </label>
+    <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+  </mat-form-field>
+
+    <div class="example-button-row">
+      <button  mat-raised-button color="accent" [disabled]="simpleForm.status !== 'VALID'" (click)="sendData()">Accent</button>
+    </div>
+
+</div>
+</form>

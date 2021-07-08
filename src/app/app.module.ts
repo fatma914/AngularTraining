@@ -12,9 +12,13 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
 import {MatButtonModule} from "@angular/material/button";
-import { CarrouselComponent } from './component/carrousel/carrousel.component';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
+//import { CarrouselComponent } from './component/carrousel/carrousel.component';
+//import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { ToolbarComponent } from './component/toolbar/toolbar.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import { BackgroundImageComponent } from './component/background-image/background-image.component';
 
 
 
@@ -22,8 +26,10 @@ import { ToolbarComponent } from './component/toolbar/toolbar.component';
   declarations: [
     AppComponent,
     ContactComponent,
-    CarrouselComponent,
-    ToolbarComponent
+    //CarrouselComponent,
+    ToolbarComponent,
+    BackgroundImageComponent
+
   ],
   imports: [
     BrowserModule,
@@ -35,7 +41,12 @@ import { ToolbarComponent } from './component/toolbar/toolbar.component';
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    IvyCarouselModule
+    // IvyCarouselModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
