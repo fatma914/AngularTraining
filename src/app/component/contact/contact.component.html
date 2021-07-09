@@ -5,9 +5,12 @@
     </p>
   </div>
 </section>
+
+<div style="margin: 0 auto; width: 400px">
+
 <form  [formGroup]="simpleForm" >
 <div class="container-fluid; mx-auto d-block " style="padding-top: 30px; color: black; padding-left: 50px">
-  <mat-form-field class="name" appearance="fill">
+  <mat-form-field class="name"  appearance="fill">
     <mat-label style="color: black">Name</mat-label>
     <label>
       <input style="color: black" formControlName="nameContact"  ngModule matInput #name maxlength="30" placeholder="Your Name">
@@ -15,7 +18,7 @@
   </mat-form-field>
 
 <div class="example-container" style="color: black">
-  <mat-form-field appearance="fill">
+  <mat-form-field class="example-full-width" appearance="fill">
     <mat-label style="color: black">Enter your email</mat-label>
     <label>
       <input matInput placeholder="pat@example.com"   formControlName="emailContact" >
@@ -32,9 +35,32 @@
     <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
   </mat-form-field>
 
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Gender</mat-label>
+    <select matNativeControl formControlName="genderContact" required>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+  </mat-form-field>
+  <!-- Checkbox -->
+  <section class="example-section" >
+    <h4 style="">Select Classroom:</h4>
+    <p><mat-checkbox style="border-color: black !important;" formControlName="classroom1">classroom 1</mat-checkbox></p>
+    <p><mat-checkbox style="border-color: black !important;" formControlName="classroom2">classroom 2</mat-checkbox></p>
+    <p><mat-checkbox style="border-color: black !important;" formControlName="classroom3">classroom 3</mat-checkbox></p>
+  </section>
+
     <div class="example-button-row">
       <button  mat-raised-button color="accent" [disabled]="simpleForm.status !== 'VALID'" (click)="sendData()">Accent</button>
     </div>
 
 </div>
 </form>
+</div>
+
+
+
+
+
+

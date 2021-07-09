@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSliderModule} from "@angular/material/slider";
-
+import { MatTableModule } from '@angular/material/table'
 import { ContactComponent } from './component/contact/contact.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
@@ -19,7 +19,9 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import { BackgroundImageComponent } from './component/background-image/background-image.component';
-
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import { RouterModule } from '@angular/router';
+import { TableComponent } from './component/table/table.component';
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { BackgroundImageComponent } from './component/background-image/backgroun
     ContactComponent,
     //CarrouselComponent,
     ToolbarComponent,
-    BackgroundImageComponent
+    BackgroundImageComponent,
+    TableComponent
 
   ],
   imports: [
@@ -41,11 +44,16 @@ import { BackgroundImageComponent } from './component/background-image/backgroun
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
+    MatTableModule,
     // IvyCarouselModule,
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
+    MatCheckboxModule,
+    RouterModule,
+
+    BrowserModule,
 
   ],
   providers: [],
