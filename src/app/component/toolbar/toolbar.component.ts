@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-toolbar',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
  // fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
 
   //fillerContent = Array.from({length: 50}, () =>
@@ -20,6 +21,7 @@ export class ToolbarComponent implements OnInit {
        //cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`);
 
   ngOnInit(): void {
+    this.router.navigate(['carrousel']);
   }
 
 }

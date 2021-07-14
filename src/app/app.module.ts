@@ -30,12 +30,13 @@ import {HttpClientModule} from "@angular/common/http";
 import {CommonModule} from "@angular/common";
 import {AppWebRoutingModule} from "./component/app-web-routing.module";
 import {CarrouselComponent} from "./component/carrousel/carrousel.component";
+import {IvyCarouselModule} from "angular-responsive-carousel";
 
 
 @NgModule({
   declarations: [
     AppComponent,
-
+    CarrouselComponent,
 
   ],
   imports: [
@@ -56,13 +57,13 @@ import {CarrouselComponent} from "./component/carrousel/carrousel.component";
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    CarrouselComponent,
     MatCheckboxModule,
     RouterModule,
     MatSnackBarModule,
     MatCardModule,
     MatTabsModule,
-    HttpClientModule
+    HttpClientModule,
+    IvyCarouselModule
 
   ],
   providers: [],

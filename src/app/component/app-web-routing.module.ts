@@ -11,6 +11,7 @@ const appRoutes: Routes = [
     path: '',
     component: ToolbarComponent,
     children: [
+      {path: '', component: CarrouselComponent},
       {path: 'carrousel', component: CarrouselComponent},
       {path: 'contact', component: ContactComponent},
       {path: 'table', component: TableComponent}

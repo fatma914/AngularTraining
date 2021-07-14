@@ -8,7 +8,7 @@ import {ContactComponent} from "./component/contact/contact.component";
 
 const appRoutes: Routes = [
   {
-    path: 'login',
+    path: '',
     loadChildren: () => import('./component/sign-in/sign-in.module').then(m => m.SignInModule),
   },
   {

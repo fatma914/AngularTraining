@@ -9,9 +9,12 @@
   <mat-sidenav-container class="example-sidenav-container">
     <mat-sidenav #snav >
       <mat-nav-list>
-        <a mat-list-item routerLink="."  >Carrousel</a>
+        <a mat-list-item routerLink="/carrousel" routerLinkActive="active" >Carrousel</a>
         <a mat-list-item routerLink= "/contact" routerLinkActive="active" >Formulaire</a>
         <a  mat-list-item routerLink="/table" routerLinkActive="active" >Table</a>
+        <a  mat-list-item routerLink="./" routerLinkActive="active" >Dialog</a>
+        <a  mat-list-item routerLink="./" routerLinkActive="active" >List</a>
+        <a  mat-list-item routerLink="./" routerLinkActive="active" >JSON Data</a>
         <a *ngIf="false" mat-list-item routerLink=".">test ng if</a>
 
       </mat-nav-list>
