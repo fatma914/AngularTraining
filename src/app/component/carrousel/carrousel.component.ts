@@ -1,22 +1,22 @@
-//import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-//@Component({
-  //selector: 'app-carrousel',
-  //templateUrl: './carrousel.component.html',
-  //styleUrls: ['./carrousel.component.scss']
-//})
-//export class CarrouselComponent implements OnInit {
+@Component({
+  selector: 'app-carrousel',
+  templateUrl: './carrousel.component.html',
+  styleUrls: ['./carrousel.component.scss']
+})
+export class CarrouselComponent implements OnInit {
 
 
-  //constructor() { }
+  constructor() { }
 
-  //ngOnInit(): void {
-  //}
+  ngOnInit(): void {
+  }
 
-  //onSlide($event: any) {
+  onSlide($event: any) {
 
- //}
-//}
+ }
+}
 
 
 //import { Component, ViewChild } from '@angular/core';

@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import {NoPreloading, RouterModule, Routes} from '@angular/router';
+import {TableComponent} from "./component/table/table.component";
+import {ContactComponent} from "./component/contact/contact.component";
 
 
 

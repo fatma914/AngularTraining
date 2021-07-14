@@ -28,6 +28,8 @@ import {MatTabsModule} from "@angular/material/tabs";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {HttpClientModule} from "@angular/common/http";
 import {CommonModule} from "@angular/common";
+import {AppWebRoutingModule} from "./component/app-web-routing.module";
+import {CarrouselComponent} from "./component/carrousel/carrousel.component";
 
 
 @NgModule({
@@ -40,6 +42,7 @@ import {CommonModule} from "@angular/common";
     CommonModule,
     BrowserModule,
     AppRoutingModule,
+    AppWebRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
     MatToolbarModule,
@@ -53,6 +56,7 @@ import {CommonModule} from "@angular/common";
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
+    CarrouselComponent,
     MatCheckboxModule,
     RouterModule,
     MatSnackBarModule,
