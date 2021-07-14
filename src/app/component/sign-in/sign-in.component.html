@@ -1,0 +1,61 @@
+
+<div id="image" class="img_container" style="margin-top: 100px;">
+
+  <div class="login_container" style="margin-top: 100px;">
+<mat-card class="example-card" style="margin-top: 50px;">
+  <mat-card-header>
+    <mat-card-title style="margin-left: 120px;">Login/Register</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <mat-tab-group>
+      <mat-tab label="Login">
+      <div>
+          <mat-form-field class="example-full-width">
+            <label>Email
+              <input type="email" matInput placeholder="Email" value="" [(ngModel)]="email">
+              <mat-icon style="margin-left: 360px;" matSuffix>email</mat-icon>
+            </label>
+          </mat-form-field>
+      </div>
+      <div>
+          <mat-form-field class="example-full-width">
+            <label> Password
+            <input type="password" matInput placeholder="Password"  [(ngModel)]="password">
+              <mat-icon style="margin-left: 360px;" matSuffix>vpn_key</mat-icon>
+            </label>
+          </mat-form-field>
+      </div>
+        <button style="display: block; margin: auto;" mat-raised-button color="accent" (click)="login()">Login</button>
+      </mat-tab>
+      <mat-tab label="Register">
+        <mat-form-field class="example-full-width">
+          <label>Email
+            <input type="email" matInput placeholder="Email" value="" [(ngModel)]="reg_email">
+            <mat-icon style="margin-left: 360px;" matSuffix>email</mat-icon>
+          </label>
+        </mat-form-field>
+
+  <div>
+    <mat-form-field class="example-full-width">
+      <label> Password
+        <input type="password" matInput placeholder="Password" [(ngModel)]="reg_password">
+        <mat-icon style="margin-left: 360px;" matSuffix>vpn_key</mat-icon>
+      </label>
+
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <label> Confirm Password
+        <input type="password" matInput placeholder="Confirm Password" [(ngModel)]="reg_confirm_password">
+        <mat-icon style="margin-left: 360px;" matSuffix>vpn_key</mat-icon>
+      </label>
+    </mat-form-field>
+  </div>
+  <button style="display: block; margin: auto;" [disabled]=" this.reg_email === '' || this.reg_password === ''" mat-raised-button color="accent" (click)="Register()" >Register</button>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card-content>
+</mat-card>
+  </div>
+
+</div>

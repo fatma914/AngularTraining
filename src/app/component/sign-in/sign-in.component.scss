@@ -1,0 +1,36 @@
+#image {
+  background-image: url("../../../assets/images/photo10.jpg");
+  height: 450px;
+  color: #fff;
+  background-size: cover;
+  //opacity: 0.5;
+}
+
+.example-card {
+  max-width: 400px;
+  margin: 0 auto;
+  width: 400px;
+ // opacity: 0.9
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.login_container{
+  margin-top: 100px;
+}
+
+.example-button-row button,
+.example-button-row a {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}

@@ -22,19 +22,22 @@ import { BackgroundImageComponent } from './component/background-image/backgroun
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import { RouterModule } from '@angular/router';
 import { TableComponent } from './component/table/table.component';
+import { SignInComponent } from './component/sign-in/sign-in.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatTabsModule} from "@angular/material/tabs";
+import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {HttpClientModule} from "@angular/common/http";
+import {CommonModule} from "@angular/common";
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent,
-    //CarrouselComponent,
-    ToolbarComponent,
-    BackgroundImageComponent,
-    TableComponent
+
 
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -52,8 +55,10 @@ import { TableComponent } from './component/table/table.component';
     FormsModule,
     MatCheckboxModule,
     RouterModule,
-
-    BrowserModule,
+    MatSnackBarModule,
+    MatCardModule,
+    MatTabsModule,
+    HttpClientModule
 
   ],
   providers: [],
