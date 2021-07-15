@@ -39,5 +39,5 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
   {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
   {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  
+
 ];
